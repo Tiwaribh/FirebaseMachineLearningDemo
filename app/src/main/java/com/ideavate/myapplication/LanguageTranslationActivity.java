@@ -48,7 +48,7 @@ public class LanguageTranslationActivity extends AppCompatActivity {
         btnMove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LanguageTranslationActivity.this, MainActivity.class));
+                startActivity(new Intent(LanguageTranslationActivity.this, SmartReplyActivity.class));
             }
         });
         btnFaceDetection.setOnClickListener(new View.OnClickListener() {

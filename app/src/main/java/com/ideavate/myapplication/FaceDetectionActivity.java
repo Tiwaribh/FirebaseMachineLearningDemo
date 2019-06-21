@@ -37,9 +37,9 @@ import java.util.List;
 
 public class FaceDetectionActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = "FaceDetection==";
-    private  ImageView imageview;
-    private   Button button;
-    private  Button btnLandmarkDetect;
+    private ImageView imageview;
+    private Button button;
+    private Button btnLandmarkDetect;
     private Uri fileUri;
     private boolean isFaceDetection = true;
 

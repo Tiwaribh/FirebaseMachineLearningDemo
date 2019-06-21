@@ -26,7 +26,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".SmartReplyActivity"
             android:label="Smart reply suggestions">
 
             <!-- <intent-filter> -->

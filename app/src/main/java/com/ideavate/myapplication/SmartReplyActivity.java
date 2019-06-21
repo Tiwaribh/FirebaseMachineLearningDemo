@@ -22,7 +22,7 @@ import com.google.firebase.ml.naturallanguage.smartreply.SmartReplySuggestionRes
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class SmartReplyActivity extends AppCompatActivity {
     private List<FirebaseTextMessage> conversation = new ArrayList<>();
     private String userIdOfSender = "12";
     private EditText editText;
