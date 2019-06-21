@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.ideavate.myapplication"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    aaptOptions {
+        noCompress "tflite"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.firebase:firebase-core:16.0.9'
+
+    //Smart reply
+    implementation 'com.google.firebase:firebase-ml-natural-language:20.0.0'
+    implementation 'com.google.firebase:firebase-ml-natural-language-smart-reply-model:20.0.0'
+
+    //Language translation
+    implementation 'com.google.firebase:firebase-ml-natural-language:20.0.0'
+    implementation 'com.google.firebase:firebase-ml-natural-language-translate-model:20.0.0'
+
+    //Image picker
+    implementation 'com.github.dhaval2404:imagepicker:1.2'
+
+    implementation 'com.google.firebase:firebase-ml-vision:21.0.0'
+    implementation 'com.google.firebase:firebase-ml-vision-face-model:18.0.0'
+
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
+apply plugin: 'com.google.gms.google-services'
